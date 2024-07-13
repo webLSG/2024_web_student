@@ -22,6 +22,7 @@ const ClassContents = () => {
       </div>
 
       {/* 수강한 학생 정보 (삭제가능) */}
+      
     </div>
   );
 };

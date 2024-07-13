@@ -1,8 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 
 function App() {
-  return <Layout />;
+  return (
+    <div className="p-5">
+      <Layout />
+    </div>
+  );
 }
 
 export default App;

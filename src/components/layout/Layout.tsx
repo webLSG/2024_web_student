@@ -1,13 +1,13 @@
+import { Home } from "@mui/icons-material";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
     <div>
-      <head></head>
+      <Home />
       <main>
         <Outlet />
       </main>
-      <footer></footer>
     </div>
   );
 };

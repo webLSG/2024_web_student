@@ -1,5 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./JWJ/Login";
+
 function App() {
-  return <div className="text-blue-500">Hello 팀원들</div>;
+  return (
+    <div>
+      <BrowserRouter>
+        {/* <Sidebar /> */}
+        <Routes>
+          {/* <Route path="/" element={<Main />}></Route> */}
+          <Route path="/login/*" element={<Login />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

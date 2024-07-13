@@ -4,17 +4,35 @@ import BeginDate from "../atom/BeginDate";
 import BeginTime from "../atom/BeginTime";
 import RestNum from "../atom/RestNum";
 
-const Diagram = () => {
+type TDiagram = {
+  className: string;
+  beginDate: {
+    year: string;
+    month: string;
+    day: string;
+  };
+  restNum: number;
+  beginTime: {
+    hours: number;
+    minutes: string;
+  };
+};
+
+const Diagram = ({ className, beginDate, beginTime, restNum }: TDiagram) => {
   const style: CSSProperties = {
     display: "flex",
     flexDirection: "row",
   };
   return (
     <div style={style}>
-      <ClassName name="aaa" />
-      <BeginDate year="2024" month="00" day="00" />
-      <RestNum num={9} />
-      <BeginTime hours={9} minutes="00" />
+      <ClassName name={className} />
+      <BeginDate
+        year={beginDate.year}
+        month={beginDate.month}
+        day={beginDate.day}
+      />
+      <RestNum num={restNum} />
+      <BeginTime hours={beginTime.hours} minutes={beginTime.minutes} />
     </div>
   );
 };

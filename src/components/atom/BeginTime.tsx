@@ -1,6 +1,6 @@
 type TBeginTime = {
   hours?: number;
-  minutes?: number;
+  minutes?: string;
 };
 const BeginTime = ({ hours, minutes }: TBeginTime) => {
   return (

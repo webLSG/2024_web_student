@@ -1,7 +1,7 @@
 type TRestNum = {
   num: number;
 };
-const RestNum = ({ num = 8 }: TRestNum) => {
+const RestNum = ({ num }: TRestNum) => {
   return <div>{num}</div>;
 };
 

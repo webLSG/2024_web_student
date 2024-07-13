@@ -6,15 +6,15 @@ import RestNum from "../atom/RestNum";
 
 const Diagram = () => {
   const style: CSSProperties = {
-    display: "grid",
-    gridTemplateColumns: "repeat(4,1fr)",
+    display: "flex",
+    flexDirection: "row",
   };
   return (
     <div style={style}>
-      <ClassName />
-      <BeginDate />
-      <RestNum num={16} />
-      <BeginTime />
+      <ClassName name="aaa" />
+      <BeginDate year="2024" month="00" day="00" />
+      <RestNum num={9} />
+      <BeginTime hours={9} minutes="00" />
     </div>
   );
 };

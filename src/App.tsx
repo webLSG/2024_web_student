@@ -1,8 +1,11 @@
-import { Button, Chip } from "@mui/material";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/layout/Layout";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="px-80 py-5">
+      <Layout />
+    </div>
+  );
 }
 
 export default App;

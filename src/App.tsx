@@ -1,18 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Login from "./JWJ/Login";
+import Layout from "./components/layout/Layout";
 
 function App() {
-  return (
-    <div>
-      <BrowserRouter>
-        {/* <Sidebar /> */}
-        <Routes>
-          {/* <Route path="/" element={<Main />}></Route> */}
-          <Route path="/login/*" element={<Login />}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
+  return <Layout />;
 }
 
 export default App;

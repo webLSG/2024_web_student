@@ -1,5 +1,15 @@
+import Diagram from "../molecules/Diagram";
+
 const Main = () => {
-  return <div>Main</div>;
+  return (
+    <div>
+      <div>Main</div>
+
+      <Diagram />
+      <Diagram />
+      <Diagram />
+    </div>
+  );
 };
 
 export default Main;

@@ -2,7 +2,6 @@ import { Button, TextField, SvgIcon } from "@mui/material";
 
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import { useNavigate } from "react-router-dom";
-import Main from "./Main";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 

@@ -1,15 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from "./HSW/Register";
+import Layout from "./components/layout/Layout";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/"></Route>
-        <Route path="/register" Component={Register}></Route>
-      </Routes>
-    </BrowserRouter>
-  );
+  return <Layout />;
 }
 
 export default App;

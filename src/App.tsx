@@ -1,10 +1,14 @@
-import Layout from "./components/layout/Layout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Register from "./HSW/Register";
 
 function App() {
   return (
-    <div className="px-80 py-5">
-      <Layout />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/"></Route>
+        <Route path="/register" Component={Register}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
